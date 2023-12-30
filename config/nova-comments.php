@@ -16,4 +16,8 @@ return [
 
     // Maximum length of comment in comments panel
     'limit' => 100,
+    
+    // Sets whether or not comments should show up in global search
+    'globally_searchable' => true,
+
 ];

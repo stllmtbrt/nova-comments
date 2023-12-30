@@ -15,6 +15,7 @@ class NovaCommentsServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Comment::$globallySearchable = config('nova-comments.globally_searchable', true);
         $this->config();
         $this->migrations();
         $this->nova();
